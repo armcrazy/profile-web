@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles_lab.css">
+    <script>
+        function setUsername(){
+            document.getElementById("username-p").innerHTML = document.getElementById("username").value;
+        }
+
+        function setProfileImage(){
+            document.getElementById("profileImage").style.backgroundImage = "url(" + document.getElementById("profileimg").value + ")";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="avatar">
+            <div class="profile-img" id="profileImage">
+            </div>
+            <div class="noti">6</div>
+        </div>
+        <div class="username">
+            <a href="https://www.facebook.com/?locale=th_TH" class="on-hover">
+            <p style="font-size: x-large; font-weight: 600;" id="username-p">Kritphiphat 63070207</p>
+            </a>
+        </div>
+        <div class="input-group">
+            <div><label>Username :</label><input style="margin-left: 10px;" type="text" id="username"><button id="setUsername" onclick="setUsername()" style="margin: 10px;">Apply</button></div>
+            <div><label>Profile :</label><input style="margin-left: 10px;" type="text" id="profileimg"><button id="setProfile" onclick="setProfileImage()" style="margin: 10px;">Apply</button></div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item col-span"></div>
+            <div class="gallery-item" style="background-image: url('https://images.immediate.co.uk/production/volatile/sites/3/2023/03/Jujutsu-Kaisen-Cropped-dbe733b.jpg?quality=90&resize=844,563'); background-size: cover;"></div>
+            <div class="gallery-item" style="background-image: url('https://4kwallpapers.com/images/wallpapers/satoru-gojo-jujutsu-2560x2560-9292.jpg'); background-size: cover;"></div>
+            <div class="gallery-item" style="background-image: url('https://staticg.sportskeeda.com/editor/2023/06/c8108-16880550686799-1920.jpg?w=840'); background-size: cover;"></div>
+            <div class="gallery-item" style="background-image: url('https://inwfile.com/s-fw/hpa532.jpg'); background-size: cover;"></div>
+            <div class="gallery-item row-span"></div>
+            <div class="gallery-item" style="background-image: url('https://f.ptcdn.info/784/075/000/r4afx181uvPqrlEW6jW-o.jpg'); background-size: cover;"></div>
+            <div class="gallery-item" style="background-image: url('https://cms.dmpcdn.com/movie/2023/10/06/c9e19190-643d-11ee-8a97-7b690d02a2f0_webp_original.webp'); background-size: cover;"></div>
+            <div class="gallery-item" style="background-image: url('https://static.zerochan.net/Sukuna.full.3187836.jpg'); background-size: cover;"></div>
+            <div class="gallery-item" style="background-image: url('https://preview.redd.it/controversial-take-sukuna-feels-less-and-less-like-a-v0-0gvouvwa9cta1.jpg?auto=webp&s=960f82d6d84df42cb02c72703edaacdb1ef6fb77'); background-size: cover;"></div>
+        </div>
+    </div>
+</body>
+
+</html>
